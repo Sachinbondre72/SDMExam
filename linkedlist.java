@@ -27,6 +27,21 @@ public class linkedlist{
                 tail=n;
             }
             else{
+                n.next=head;
+                head=n;
+            }
+        }
+
+        public void insert_At_End(int data){
+            Node n = new Node(data);
+            
+            
+            if(head==null)
+            {
+                head=n;
+                tail=n;
+            }
+            else{
                 tail.next=n;
                 tail=n;
             }
@@ -63,6 +78,9 @@ public class linkedlist{
         ssl.addNode(60);
         ssl.Display();
         System.out.println("Work by Branch02");
+        ssl.insert_At_End(02);
+        System.out.println("After Insertion 2 at End");
+        ssl.Display();
 
 
     }
