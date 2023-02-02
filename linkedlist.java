@@ -58,6 +58,11 @@ public class linkedlist{
         ssl.addNode(30);
         ssl.addNode(40);
         ssl.Display();
+        System.out.println("Work by Branch01");
+        ssl.addNode(50);
+        ssl.addNode(60);
+        ssl.Display();
+        System.out.println("Work by Branch02");
 
 
     }
